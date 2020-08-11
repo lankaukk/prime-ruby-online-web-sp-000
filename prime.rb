@@ -1,10 +1,7 @@
 # Add  code here!
-def prime?(i) 
-  if  i > 1 &&
-    i/i == 1 &&
-    i % 2 != 0
-    return true 
-  else
-    return false 
+def prime?(num) 
+  (2..(num - 1)).each do |n|
+    return false if num % n == 0
   end
+  true
 end
